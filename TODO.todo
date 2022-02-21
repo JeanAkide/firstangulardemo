@@ -1,0 +1,5 @@
+git add . //to add file
+
+git commit -am"your message"
+
+git push 

@@ -1,0 +1,31 @@
+
+<h1>Angular Services</h1>
+ 
+ <app-employee-info></app-employee-info>
+
+
+
+ <div class="container mt-5" style="max-width: 550px;">
+
+    <div class="form-group">
+      <input type="text" class="form-control mb-4" placeholder="Search"  name="listSearch" [(ngModel)]="args" name="args">
+    </div>
+  
+    <div class="card mb-1" *ngFor="let data of Employees| searchpipe: args">
+      <div class="card-body">
+        <h5 class="card-title">{{data.year}}</h5>
+        <h6 class="card-subtitle mb-2 text-muted">{{data.year}}</h6>
+        <p class="card-text">{{data.email}}</p>
+      </div>
+    </div>
+  
+  </div>
+ 
+
+
+
+
+
+
+
+<router-outlet></router-outlet>
